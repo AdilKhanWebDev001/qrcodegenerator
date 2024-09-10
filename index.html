@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adil QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Adil QR Code Generator</h1>
+    <textarea id="dataInput" placeholder="Enter URLs or text (one per line, up to 5000)"></textarea>
+    <button id="generateBtn">Generate QR Codes</button>
+    <button id="downloadBtn" style="display:none;">Download All QR Codes as ZIP</button>
+    <p id="progress" style="display:none;">Generating QR Codes...</p>
+    <p id="timeRemaining" style="display:none;">Estimated Time Remaining: <span id="timeValue"></span> seconds</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
